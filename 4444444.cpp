@@ -1,7 +1,6 @@
 #include <iostream>
 
 using namespace std;
-
 //класс для представления суммы на счете
 class Money {
 private:
@@ -47,7 +46,7 @@ public:
 // класс для представления банковского счета
 class Account {
 private:
-    Money balance; // сумма на счете и дата открытия счета
+    money balance; // сумма на счете и дата открытия счета
     Date openingDate;
 
 public:
