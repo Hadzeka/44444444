@@ -1,11 +1,10 @@
 #include <iostream>
-#include <vector>
+
 using namespace std;
 //класс для представления суммы на счете
 class Money {
 private:
     double amount; // сумма на счете
-
 public:
     Money() : amount(0) {} // конструктор по умолчанию инициализирует сумму нулем
 
@@ -36,7 +35,6 @@ public:
         this->month = month;
         this->year = year;
     }
-
     void display() const {                       // метод для вывода даты открытия счета
         cout << day << "/" << month << "/" << year << endl;
     }
