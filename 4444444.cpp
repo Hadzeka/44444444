@@ -20,11 +20,7 @@ public:
         return amount;
     }
 };
-void hello()
-{
-    std::cout << "hello" << std::endl;
-}
-// класс для представления даты открытия счета
+с для представления даты открытия счета
 class Date {
 private:
     int day, month, year; // День, месяц, год
