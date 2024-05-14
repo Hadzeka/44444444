@@ -95,7 +95,7 @@ public:
 int main() {
     setlocale(LC_ALL, "rus");
     try {
-        Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
+        Account account(0, 4, 4, 2022); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
         account.display(); // вывод данных на экран
     }
