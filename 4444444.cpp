@@ -28,7 +28,7 @@ public:
 
     Date(int day, int month, int year) { // конструктор для установки даты открытия счета
         if (day < 1 || day > 31 || month < 1 || month > 12 || year < 0) { // проверка даты
-            throw invalid_argument("не существует такой даты ты чо ");
+            throw invalid_argument("ошибка даты ");
         }
         this->day = day;
         this->month = month;
