@@ -45,7 +45,6 @@ class Account {
 private:
     money balance; // сумма на счете и дата открытия счета
     Date openingDate;
-
 public:
     // конструктор для создания счета с начальной суммой и датой открытия
     Account(double initialBalance, int day, int month, int year) {
