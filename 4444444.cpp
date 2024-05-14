@@ -58,7 +58,7 @@ public:
             openingDate = Date(day, month, year);
         }
         catch (const invalid_argument& e) { // обработка ошибок
-            cerr << "ошибочкк: " << e.what() << endl; // вывод ошибки
+            cerr << "Ошибка: " << e.what() << endl; // вывод ошибки
             throw; // пробрасывание исключения выше
         }
     }
