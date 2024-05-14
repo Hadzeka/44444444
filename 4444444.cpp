@@ -37,7 +37,6 @@ public:
         this->month = month;
         this->year = year;
     }
-
     void display() const {                       // метод для вывода даты открытия счета
         cout << day << "/" << month << "/" << year << endl;
     }
@@ -48,7 +47,6 @@ class Account {
 private:
     Money balance; // сумма на счете и дата открытия счета
     Date openingDate;
-
 public:
     // конструктор для создания счета с начальной суммой и датой открытия
     Account(double initialBalance, int day, int month, int year) {
@@ -61,7 +59,6 @@ public:
             throw; // пробрасывание исключения выше
         }
     }
-
     // метод для вводда данных с клавиатуры (начальной суммы и даты открытия счета)
     void read() {
         double initialBalance;
@@ -92,7 +89,6 @@ public:
 };
 
 int main() {
-    setlocale(LC_ALL, "rus");
     try {
         Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
