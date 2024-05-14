@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 //класс для представления суммы на счете
@@ -37,18 +38,18 @@ public:
         this->month = month;
         this->year = year;
     }
+
     void display() const {                       // метод для вывода даты открытия счета
         cout << day << "/" << month << "/" << year << endl;
     }
 };
-void sayHello() {
-	cout << "Hello!";
-}
+
 // класс для представления банковского счета
 class Account {
 private:
     Money balance; // сумма на счете и дата открытия счета
     Date openingDate;
+
 public:
     // конструктор для создания счета с начальной суммой и датой открытия
     Account(double initialBalance, int day, int month, int year) {
@@ -61,6 +62,7 @@ public:
             throw; // пробрасывание исключения выше
         }
     }
+
     // метод для вводда данных с клавиатуры (начальной суммы и даты открытия счета)
     void read() {
         double initialBalance;
@@ -84,18 +86,18 @@ public:
 
     // метод для вывода данных на экран (текущей суммы на счете и даты открытия счета)
     void display() const {
-        cout << "баланс: " << balance.getAmount() << endl; // вывод текущей суммы на счете
+        cout << "Баланс: " << balance.getAmount() << endl; // вывод текущей суммы на счете
         cout << "Дата открытия: ";
         openingDate.display(); // вывод даты открытия счета
     }
 };
 
 int main() {
-    setlocale(LC_ALL, "rus")
+    setlocale(LC_ALL, "rus");
     try {
-        Account account(0, 1, 1, 2024) // создание объекта класса Account с начальной суммой и датой открытия
+        Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
-        account.display();// вывод данных на экран
+        account.display(); // вывод данных на экран
     }
     catch (const invalid_argument& e) { // обработка ошибок
         cerr << "ошибка: " << e.what() << endl; // вывод ошибки
