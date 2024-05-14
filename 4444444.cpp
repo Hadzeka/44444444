@@ -45,14 +45,14 @@ public:
 };
 
 // класс для представления банковского счета
-class Account {
+class account {
 private:
     Money balance; // сумма на счете и дата открытия счета
     Date openingDate;
 
 public:
     // конструктор для создания счета с начальной суммой и датой открытия
-    Account(double initialBalance, int day, int month, int year) {
+    account(double initialBalance, int day, int month, int year) {
         try {
             balance = Money(initialBalance); //установка начальной суммы и даты открытия счета
             openingDate = Date(day, month, year);
