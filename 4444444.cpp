@@ -105,3 +105,4 @@ setlocale(LC_ALL, "Russian");
 
     return 0;
 }
+//врпо
