@@ -1,5 +1,4 @@
 #include <iostream>
-#include "pch.h"
 using namespace std;
 
 //класс для представления суммы на счете
