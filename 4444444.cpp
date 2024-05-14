@@ -105,4 +105,3 @@ setlocale(LC_ALL, "Russian");
 
     return 0;
 }
-//хочу автомат по врпо пожалуйста
