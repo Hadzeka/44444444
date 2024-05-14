@@ -28,11 +28,11 @@ private:
     int day, month, year; // День, месяц, год
 
 public:
-    Date() : day(1), month(5), year(2000) {} // конструктор по умолчанию инициализирует дату 01/01/2000
+    Date() : day(1), month(1), year(2000) {} // конструктор по умолчанию инициализирует дату 01/01/2000
 
     Date(int day, int month, int year) { // конструктор для установки даты открытия счета
         if (day < 1 || day > 31 || month < 1 || month > 12 || year < 0) { // проверка даты
-            throw invalid_argument("Такой даты не существует");
+            throw invalid_argument("не существует такой даты ты чо ");
         }
         this->day = day;
         this->month = month;
@@ -58,7 +58,7 @@ public:
             openingDate = Date(day, month, year);
         }
         catch (const invalid_argument& e) { // обработка ошибок
-            cerr << "Ошибка: " << e.what() << endl; // вывод ошибки
+            cerr << "ошибочкк: " << e.what() << endl; // вывод ошибки
             throw; // пробрасывание исключения выше
         }
     }
@@ -71,7 +71,7 @@ public:
         cout << "Введите первоначальный баланс: ";
         cin >> initialBalance;
 
-        cout << "Укажите дату открытия (день месяц год(раздельно) ): ";
+        cout << "Введите дату открытия (день месяц год(раздельно) ): ";
         cin >> day >> month >> year;
 
         try {
@@ -95,7 +95,7 @@ public:
 int main() {
     setlocale(LC_ALL, "rus");
     try {
-        Account account(0, 4, 4, 2022); // создание объекта класса Account с начальной суммой и датой открытия
+        Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
         account.display(); // вывод данных на экран
     }
