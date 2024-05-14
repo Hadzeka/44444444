@@ -94,8 +94,8 @@ int main() {
     setlocale(LC_ALL, "rus")
     try {
         Account account(0, 1, 1, 2024) // создание объекта класса Account с начальной суммой и датой открытия
-        account.read() // ывод данных с клавиатуры
-        account.display()// вывод данных на экран
+        account.read(); // ывод данных с клавиатуры
+        account.display();// вывод данных на экран
     }
     catch (const invalid_argument& e) { // обработка ошибок
         cerr << "ошибка: " << e.what() << endl; // вывод ошибки
