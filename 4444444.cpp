@@ -102,6 +102,5 @@ int main() {
     catch (const invalid_argument& e) { // обработка ошибок
         cerr << "ошибка: " << e.what() << endl; // вывод ошибки
     }
-cout << "i love vrpo";
     return 0;
 }
