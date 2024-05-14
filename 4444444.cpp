@@ -63,16 +63,7 @@ public:
     }
 
     // метод для вводда данных с клавиатуры (начальной суммы и даты открытия счета)
-    void read() {
-        double initialBalance;
-        int day, month, year;
-
-        cout << "Введите первоначальный баланс: ";
-        cin >> initialBalance;
-
-        cout << "Введите дату открытия (день месяц год(раздельно) ): ";
-        cin >> day >> month >> year;
-
+  
         try {
             balance = Money(initialBalance); // установка начальной суммы
             openingDate = Date(day, month, year); // установка даты открытия счета
