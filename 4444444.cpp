@@ -93,7 +93,7 @@ public:
 };
 
 int main() {
-    setlocale(LC_ALL, "rus");
+    setlocale(LC_ALL, "Russian");
     try {
         Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
