@@ -3,7 +3,7 @@
 using namespace std;
 
 //класс для представления суммы на счете
-
+class Money {
 private:
     double amount; // сумма на счете
 
