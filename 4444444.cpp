@@ -12,7 +12,7 @@ public:
 
     Money(double amount) { // конструктор для установки начальной суммы на счете
         if (amount < 0) {
-            throw invalid_argument("сумма не может быть отрицательной!!! "); // проверка на отрицательную сумму
+            throw invalid_argument("Сумма не может быть отрицательной!!! "); // проверка на отрицательную сумму
         }
         this->amount = amount;
     }
@@ -45,14 +45,14 @@ public:
 };
 
 // класс для представления банковского счета
-class account {
+class Account {
 private:
     Money balance; // сумма на счете и дата открытия счета
     Date openingDate;
 
 public:
     // конструктор для создания счета с начальной суммой и датой открытия
-    account(double initialBalance, int day, int month, int year) {
+    Account(double initialBalance, int day, int month, int year) {
         try {
             balance = Money(initialBalance); //установка начальной суммы и даты открытия счета
             openingDate = Date(day, month, year);
@@ -93,7 +93,7 @@ public:
 };
 
 int main() {
-setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "rus");
     try {
         Account account(0, 1, 1, 2024); // создание объекта класса Account с начальной суммой и датой открытия
         account.read(); // ывод данных с клавиатуры
