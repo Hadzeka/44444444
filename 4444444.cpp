@@ -19,7 +19,6 @@ public:
         return amount;
     }
 };
-с для представления даты открытия счета
 class Date {
 private:
     int day, month, year; // День, месяц, год
